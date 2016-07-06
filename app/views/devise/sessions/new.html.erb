@@ -1,0 +1,7 @@
+<%=
+  react_component(
+    'LoginForm',
+    { user_agent: request.user_agent, csrf_token: form_authenticity_token },
+    { prerender: true }
+  )
+%>
